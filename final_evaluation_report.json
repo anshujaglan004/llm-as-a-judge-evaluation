@@ -1,0 +1,88 @@
+{
+    "project": {
+        "name": "LLM-as-a-Judge Evaluation Pipeline",
+        "version": "1.0",
+        "evaluation_date": "2026-08-12T01:34:33.531453"
+    },
+    "judge": {
+        "model": "gemini-3-flash-preview",
+        "provider": "Google Gemini",
+        "api_key_hidden": true
+    },
+    "evaluation_method": {
+        "type": "LLM-as-a-Judge",
+        "rubric": {
+            "correctness": {
+                "description": "Whether the answer is factually accurate and answers the question correctly.",
+                "weight": 0.3
+            },
+            "completeness": {
+                "description": "Whether the answer contains the important information needed to properly answer the question.",
+                "weight": 0.25
+            },
+            "clarity": {
+                "description": "Whether the answer is understandable, clear, and well organized.",
+                "weight": 0.15
+            },
+            "instruction_following": {
+                "description": "Whether the answer follows the user's instructions and requested format.",
+                "weight": 0.15
+            },
+            "tone": {
+                "description": "Whether the response uses an appropriate and professional tone.",
+                "weight": 0.15
+            }
+        },
+        "scoring_scale": "0-10"
+    },
+    "test_dataset": {
+        "total_cases": 8
+    },
+    "llm_evaluation": {
+        "successful_evaluations": 1,
+        "coverage": 0.125
+    },
+    "bias_analysis": {
+        "position_bias": {
+            "metric": "Position Flip Rate",
+            "value": 0.4,
+            "assessment": "Moderate position instability.",
+            "data_status": "Demonstration"
+        },
+        "length_bias": {
+            "metric": "Average Score Difference",
+            "value": 0.5,
+            "assessment": "Low potential length bias.",
+            "data_status": "Demonstration"
+        },
+        "self_preference": {
+            "metric": "Average Score Difference",
+            "value": 0.3333,
+            "assessment": "Low potential self-preference.",
+            "data_status": "Demonstration"
+        },
+        "consistency": {
+            "metric": "Average Score Difference",
+            "value": 0.125,
+            "assessment": "High consistency.",
+            "data_status": "Demonstration"
+        }
+    },
+    "adversarial_testing": {
+        "total_tests": 5,
+        "attack_categories": {
+            "Confidently incorrect answer": 1,
+            "False factual claim": 1,
+            "Instruction injection": 1,
+            "Score manipulation": 1,
+            "Concept reversal": 1
+        }
+    },
+    "limitations": [
+        "Gemini API quota was exhausted during the evaluation run.",
+        "Bias-analysis numerical examples are demonstration values.",
+        "Only successfully generated LLM judgments are counted as live evaluations.",
+        "Demonstration metrics must not be interpreted as live Gemini measurements."
+    ],
+    "conclusion": "The project implements a structured LLM-as-a-Judge evaluation pipeline with a defined rubric, pointwise evaluation, pairwise comparison framework, bias analysis, consistency testing, adversarial testing, and structured JSON reporting."
+}

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "TC001",
+        "input": "What is Machine Learning?",
+        "expected_output": "Machine learning is a branch of artificial intelligence where computers learn patterns from data and use those patterns to make predictions or decisions.",
+        "model_output_A": "Machine learning is a branch of artificial intelligence that allows computers to learn patterns from data and make predictions without being explicitly programmed for every task.",
+        "model_output_B": "Machine learning is computer programming where computers learn things from data."
+    },
+    {
+        "id": "TC002",
+        "input": "What is Python?",
+        "expected_output": "Python is a high-level, general-purpose programming language known for its simple syntax and readability.",
+        "model_output_A": "Python is a high-level programming language known for its simple syntax, readability, and wide use in web development, data science, automation, and artificial intelligence.",
+        "model_output_B": "Python is a programming language and also the name of a type of snake."
+    },
+    {
+        "id": "TC003",
+        "input": "Explain supervised learning in simple words.",
+        "expected_output": "Supervised learning is a type of machine learning where a model learns from labeled examples. Each example contains an input and its correct answer.",
+        "model_output_A": "Supervised learning means teaching a machine using examples that already have the correct answers. The model learns the relationship between inputs and outputs.",
+        "model_output_B": "Supervised learning means a computer learns completely by itself without examples or labels."
+    },
+    {
+        "id": "TC004",
+        "input": "What is the difference between AI and Machine Learning?",
+        "expected_output": "Artificial intelligence is the broader concept of machines performing tasks that normally require human intelligence. Machine learning is a subset of AI that allows systems to learn from data.",
+        "model_output_A": "AI is the broader field of creating systems capable of intelligent behavior. Machine learning is a subset of AI where systems learn patterns from data.",
+        "model_output_B": "AI and machine learning are exactly the same thing. There is no difference between them."
+    },
+    {
+        "id": "TC005",
+        "input": "Give two benefits of exercise.",
+        "expected_output": "Two benefits of exercise are improved physical fitness and better mental well-being.",
+        "model_output_A": "Two benefits of regular exercise are improved physical fitness and improved mental well-being.",
+        "model_output_B": "Exercise is good for people and can make them feel better."
+    },
+    {
+        "id": "TC006",
+        "input": "What is a database?",
+        "expected_output": "A database is an organized collection of data that can be stored, managed, retrieved, and updated efficiently.",
+        "model_output_A": "A database is an organized collection of information that allows data to be stored, retrieved, updated, and managed efficiently.",
+        "model_output_B": "A database is a place where computer programs are stored."
+    },
+    {
+        "id": "TC007",
+        "input": "What does CPU stand for?",
+        "expected_output": "CPU stands for Central Processing Unit. It executes instructions and performs calculations in a computer.",
+        "model_output_A": "CPU stands for Central Processing Unit. It is the main processor responsible for executing instructions and performing calculations.",
+        "model_output_B": "CPU stands for Computer Personal Unit."
+    },
+    {
+        "id": "TC008",
+        "input": "Explain overfitting in machine learning.",
+        "expected_output": "Overfitting occurs when a machine learning model learns the training data too closely, including noise, and therefore performs poorly on unseen data.",
+        "model_output_A": "Overfitting happens when a model memorizes the training data instead of learning general patterns. It may have very good training performance but poor performance on new data.",
+        "model_output_B": "Overfitting means the model is always too simple and cannot learn enough from the training data."
+    }
+]

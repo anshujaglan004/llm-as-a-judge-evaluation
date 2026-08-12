@@ -1,0 +1,9 @@
+Metric,Value,Status
+Total Test Cases,8.0,Dataset
+Successful LLM Evaluations,1.0,Live Gemini
+LLM Evaluation Coverage,0.125,Live Gemini
+Position Flip Rate,0.4,Demonstration
+Length Bias Difference,0.5,Demonstration
+Self Preference Difference,0.33333333333333215,Demonstration
+Consistency Difference,0.125,Demonstration
+Adversarial Tests,5.0,Test Suite
